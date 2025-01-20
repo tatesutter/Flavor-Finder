@@ -1,0 +1,30 @@
+import React, { useEffect, useState } from 'react';
+
+const RecipePage = () => {
+    const [recipes, setRecipes] = useState([]);
+
+    useEffect(() => {
+        // We should update this portion to Replace with our API endpoint(s)
+        fetch('https://api.example.com/recipes')
+            .then(response => response.json())
+            .then(data => setRecipes(data))
+            .catch(error => console.error('Error fetching recipes:', error));
+    }, []);
+
+    return (
+        <div>
+            <h1>Recipes</h1>
+            <ul>
+                {recipes.map(recipe => (
+                    <li key={recipe.id}>
+                        <h2>{recipe.title}</h2>
+                        <img src={recipe.image} alt={recipe.title} />
+                        <a href={recipe.link} target="_blank" rel="noopener noreferrer">View Full Recipe</a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+export default RecipePage;
