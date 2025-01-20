@@ -7,6 +7,7 @@ const RecipePage = () => {
 
     useEffect(() => {
         // Fetch recipes from your API - we need to update for our updated API
+        // this user ID is what we should pull from the JWT
         fetch('https://api.example.com/recipes')
             .then(response => response.json())
             .then(data => setRecipes(data))
