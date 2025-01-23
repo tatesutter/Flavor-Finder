@@ -1,12 +1,20 @@
 # Getting Started with Flavor-Finder
 WHEN users input and submit unique login information at the opening page
+
 THEN they can access the project in an account unique to that person
+
 WHEN users ask to view a recipe
+
 THEN the website will select a single recipe at random to show to the user, pulled by the API
+
 WHEN users choose to store a recipe of their choosing
+
 THEN they can input the name, baking items, and instructions of that recipe for the SQL database to store
+
 WHEN users want to search for only recipes that have or don't have specific ingredients
+
 THEN they can select boxes to filter out recipes without those ingredients, and the display will be changed accordingly
+
 
 
 # You will need:
