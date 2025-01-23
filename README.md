@@ -1,17 +1,20 @@
 # Getting Started with Flavor-Finder
-This project will:
+WHEN users input and submit unique login information at the opening page
 
-1. Give users the ability to input their preferences (ex. If a user doesn't like tomatoes, then they can indicate to pull a random recipe that doesn't include tomatoes).
+THEN they can access the project in an account unique to that person
 
-2. Ask users to input login information that allows for them to interact with the project independantly from each other.
+WHEN users ask to view a recipe
 
-3. Provide users a randomized recipe--pulled via the API--to make.
+THEN the website will select a single recipe at random to show to the user, pulled by the API
 
-4. Let users store recipes that they enjoyed and want to make again. These recipes should be stored in a database in SQL.
+WHEN users choose to store a recipe of their choosing
 
-5. Allow users to look up recipes using the ingredients they currently have (ex. If a user has eggs, sugar and pickled beets, then they can input those ingredients for the database to scan; the database will then display recipes that include each of those ingredients).
+THEN they can input the name, baking items, and instructions of that recipe for the SQL database to store
 
-6. Contain an SQL database with tables, and the values inside are different recipes (recipe names, ingredients, etc).
+WHEN users want to search for only recipes that have or don't have specific ingredients
+
+THEN they can select boxes to filter out recipes without those ingredients, and the display will be changed accordingly
+
 
 
 # You will need:
