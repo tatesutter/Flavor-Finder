@@ -38,15 +38,6 @@ class Cli {
                 const ingredient = result.rows;
                 console.log("/n");
                 console.table(ingredient);
-            } else if (answers.recipeFinder === "Delete recipe") {
-                let remove = prompt("Enter the name of the dish you want to remove.");
-                const result = await pool.query("DELETE FROM ingredients WHERE recipe = remove");
-                const ingredient = result.rows;
-                console.log("/n");
-                console.table(ingredient);
-            } else if (answers.recipeFinder === "Change recipe") {
-                const result = await pool.query("ALTER TABLE ingredients");
-                const ingredient = result.rows;
             } else if (answers.recipeFinder === "Show recipe") {
                 const result = await pool.query("SELECT recipe, ing_list, instructions FROM ingredients ORDER BY RANDOM() LIMIT 1");
                 const ingredient = result.rows;
