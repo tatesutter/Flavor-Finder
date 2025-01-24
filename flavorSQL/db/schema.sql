@@ -7,11 +7,6 @@ CREATE TABLE users (
     email VARCHAR(100) NOT NULL
 )
 
-CREATE TABLE ingredients (
-    id SERIAL PRIMARY KEY,
-    ingredient_name VARCHAR(30) ,
-)
-
 CREATE TABLE saved_recipes (
     id SERIAL PRIMARY KEY,
     FOREIGN KEY(user_id)
