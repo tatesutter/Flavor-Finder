@@ -83,14 +83,15 @@ try {
                     </a>
                 )}
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary">View Recipe</button>
+                  <button className="btn btn-secondary">Save Recipe</button>
                 </div>
               </div>
             </div>
           ))
         ) : (
           // Only show this message if the query is not empty
-          query && <p>No recipes found for "{query}".</p>
+          // query && 
+          <p>Recipe found for "{query}".</p>
         )}
       </div>
 
