@@ -7,21 +7,13 @@ CREATE TABLE users (
     email VARCHAR(100) NOT NULL
 )
 
-CREATE TABLE ingredients (
-    id SERIAL PRIMARY KEY,
-    recipe VARCHAR(30),
-    ing_list TEXT,
-    instructions TEXT
-)
-
 CREATE TABLE saved_recipes (
     id SERIAL PRIMARY KEY,
     FOREIGN KEY(user_id)
     REFERENCES users(id)
     ON DELETE SET NULL,
     recipe_API_id VARCHAR(40) NOT NULL,
-    FOREIGN KEY(ingredient_id)
-    REFERENCES ingredients(id)
-    ON DELETE SET NULL,
-    inc_or_exc BOOLEAN,
+    strMealThumb VARCHAR(100) NOT NULL,
+    strInstructions VARCHAR(100) NOT NULL,
+    strYoutube VARCHAR(100) NOT NULL
 )
