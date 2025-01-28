@@ -13,8 +13,7 @@ CREATE TABLE saved_recipes (
     REFERENCES users(id)
     ON DELETE SET NULL,
     recipe_API_id VARCHAR(40) NOT NULL,
-    FOREIGN KEY(ingredient_id)
-    REFERENCES ingredients(id)
-    ON DELETE SET NULL,
-    inc_or_exc BOOLEAN,
+    strMealThumb VARCHAR(100) NOT NULL,
+    strInstructions VARCHAR(100) NOT NULL,
+    strYoutube VARCHAR(100) NOT NULL
 )
