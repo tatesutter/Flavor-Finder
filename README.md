@@ -28,6 +28,7 @@ The Flavor Finder App is a full-stack web application designed to help users fin
 - **Express.js**: Web framework for building APIs and handling routes.
 - **Sequelize**: ORM for managing PostgreSQL/MySQL databases.
 - **JWT**: Secure authentication mechanism.
+- **API**: MealDB api was used for recipe data.
 
 ### Database:
 - **Relational Database**: Compatible with PostgreSQL/MySQL (configured using Sequelize).
