@@ -8,8 +8,8 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, onLogout }) => (
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-4">
-        <li><Link to="/recipes" className="hover:underline">Recipes</Link></li>
-        <li><Link to="/profile" className="hover:underline">Profile</Link></li>
+        <li><Link to="/recipes?search=saved" className="hover:underline">Saved Recipes</Link></li>
+        {/* <li><Link to="/profile" className="hover:underline">Profile</Link></li> */}
         {isAuthenticated ? (
           <li><button onClick={onLogout} className="hover:underline">Logout</button></li>
         ) : (

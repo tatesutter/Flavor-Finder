@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Search: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchTerm) {
-      history.push(`/recipes?search=${searchTerm}`); // Navigate to the Recipes page with the search term
+      navigate(`/recipes?search=${searchTerm}`); // Navigate to the Recipes page with the search term
     }
   };
 

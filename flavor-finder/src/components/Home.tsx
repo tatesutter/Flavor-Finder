@@ -1,5 +1,6 @@
-import React, {useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import Recipes from './Recipes'; // Import the Recipes component
+import { Link, useNavigate, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Home Component
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
                   <p className="py-6">Browse and share your favorite recipes with the community. Find recipes tailored to your taste.</p>
                   {/* Add the SearchBar component here */}
                   <SearchBar onSearch={handleSearch} />
-                  <button onClick={exploreRandomRecipe} className="btn btn-primary">Explore Recipes</button>
+                  <button onClick={exploreRandomRecipe} className="btn btn-primary">Random Recipe</button>
                   
               </div>
           </div>
@@ -62,7 +63,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   );
 };
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   return (
     <Router>
       <div>
@@ -80,14 +81,14 @@ const App: React.FC = () => {
           </nav>
         </header>
         <main>
-          <Search /> {/* Include the Search component here */}
-          <Switch>
-            <Route path="/recipes" component={Recipes} />
-            <Route path="/" exact>
+          {/* <Search /> Include the Search component here */}
+          <Routes>
+            <Route path="/recipes" element={<Recipes />} />
+            <Route path="/">
               <h2>Welcome to the Recipe Finder</h2>
               {/* You can add more content here */}
             </Route>
-          </Switch>
+          </Routes>
         </main>
       </div>
     </Router>

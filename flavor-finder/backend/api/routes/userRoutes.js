@@ -5,6 +5,7 @@ const authenticateToken = require('../middlewares/authenticateToken.js');
 const router = express.Router();
 
 // User signup
+// /api/routes/signup
 router.post('/signup', signup);
 
 // User login

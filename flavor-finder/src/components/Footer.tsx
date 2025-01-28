@@ -1,4 +1,3 @@
-import React from 'react';
 
 // Footer Component
 const Footer = () => (
