@@ -1,42 +1,56 @@
 # Getting Started with Flavor-Finder
-WHEN users input and submit unique login information at the opening page
 
-THEN they can access the project in an account unique to that person
+## Description
+The Flavor Finder App is a full-stack web application designed to help users find and save their favorite recipes. It features user authentication, recipe management, and secure access to protected routes. Built using Node.js, Express.js, Sequelize, and JWT, this app ensures both functionality and security.
 
-WHEN users find the website before logging in
+## Table of Contents
+- [Installation](##installation)
+- [Instructions](##instructions)
+- [License](##license)
+- [Contributing](##contributing)
+- [Github Username](##username)
 
-THEN they will see in the header: buttons letting them view specific displays in the body based on which one is activated: Recipes (several boxes with a finished dish, the name of the dish, and recipe instructions for it), Profile (profile information, including how many recipes they've saved once on their account), Login (user input for logging into an already existing account), and Signup (user input for making a new account).
+## Installation
+Clone the repository:
+```
+bash
+git clone <repo-url>
+cd flavor-finder-app
+```
 
-WHEN users ask to view a recipe
+Install dependencies:
+```
+bash
+npm install
+```
 
-THEN the website will select a single recipe at random to show to the user, pulled by the API
+Configure environment variables: Create a .env file in the root directory with the following:
+```
+makefile
+JWT_SECRET=your_secret_key
+DATABASE_URL=your_database_connection_string
+```
 
-WHEN users choose to store a recipe of their choosing
+## Instructions
+Run the application:
+```
+bash
+npm start
+```
 
-THEN they can input the name, baking items, and instructions of that recipe for the SQL database to store
+Access the application at [Flavor Finder](http://localhost:3000).
 
-WHEN users want to search for only recipes that have or don't have specific ingredients
+## License
+![License Badge](https://img.shields.io/badge/license-MIT-yellow.svg)
 
-THEN they can select boxes to filter out recipes without those ingredients, and the display will be changed accordingly
+## Contributing
+Contributions are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Commit your chances
+4. Push to the branch
+5. Submit a pull request
 
-WHEN a specific recipe is selected and displayed
+## Github Username 
+[tatesutter](https://github.com/tatesutter/Flavor-Finder)
 
-THEN the webpage will display in descending order: an image of the finished dish, the dish's title, recipe instructions for how to make the dish, a button titled "Watch on YouTube" linking to a video on how to make the dish, and a "Save Recipe" button allowing users to save the recipe to their account.
-
-
-
-# You will need:
-
-1. Two different APIs
-
-2. Use PostgreSQL and the Sequelize ORM for the database
-
-3. Create PPTX or a Presentation File
-
-4. Be interactive and responsive
-
-5. A polished UI
-
-6. React for the front end
-
-7. A folder structure that follows separation of concerns (design principle for neatly organizing a computer program by separating it into different sections).
