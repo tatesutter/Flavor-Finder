@@ -99,8 +99,6 @@ The Flavor Finder App is a full-stack web application designed to help users fin
 
 
 ## Future Enhancements
-    Search Functionality: Allow users to search for recipes.
-
     User-Specific Recipes: Associate recipes with specific users.
 
     Image Upload: Enable users to upload recipe images.
