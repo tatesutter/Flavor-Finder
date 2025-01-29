@@ -38,9 +38,11 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, onLogout }) => (
         )}
       </ul>
     </div>
-    {/* <div className="navbar-end">
-      <button className="btn bg-white text-blue-500 hover:bg-gray-200">Get Started</button>
-    </div> */}
+    <div className="navbar-end">
+      <button className="btn bg-white text-blue-500 hover:bg-gray-200">
+        Get Started
+      </button>
+    </div>
   </nav>
 );
 

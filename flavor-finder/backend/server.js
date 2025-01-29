@@ -17,7 +17,7 @@ sequelize
   .sync({ alter: true }) // Synchronize database schema
   .then(() => {
     console.log('Database synchronized successfully');
-    const PORT = process.env.PORT || 5000;
+    const PORT = process.env.PORT || 3001;
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
   })
   .catch((err) => console.error('Error synchronizing database:', err));
