@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Login Component
 interface LoginProps {
@@ -6,8 +6,8 @@ interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = ({ onLogin }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   interface LoginFormEvent extends React.FormEvent<HTMLFormElement> {}
 
@@ -15,11 +15,11 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
     e.preventDefault();
     try {
       // Mock API request for token
-      const token: string = 'mock-jwt-token'; // Replace with actual API call
-      localStorage.setItem('jwtToken', token);
+      const token: string = "mock-jwt-token"; // Replace with actual API call
+      localStorage.setItem("jwtToken", token);
       onLogin();
     } catch (error: any) {
-      console.error('Login failed:', error.message);
+      console.error("Login failed:", error.message);
     }
   };
 

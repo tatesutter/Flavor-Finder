@@ -8,10 +8,10 @@ import {
 import { jwtDecode } from "jwt-decode";
 import Recipes from "./components/Recipes"; //Import the Recipes component
 import Navbar from "./components/Navbar"; //Import the NavBar component
-import Footer from "./components/footer"; //Import the Footer component
+import Footer from "./components/Footer"; //Import the Footer component
 import Home from "./components/Home"; //Import the Home component
-import Login from "./components/login"; //Import the Login component
-import Signup from "./components/signup"; //Import the Signup component
+import Login from "./components/Login"; //Import the Login component
+import Signup from "./components/Signup"; //Import the Signup component
 import Profile from "./components/Profile"; //Import the Profile component
 
 // App Component that handles authentication
