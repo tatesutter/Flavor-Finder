@@ -8,5 +8,18 @@
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run client:build && npm run server",
+    "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
+    "server": "cd server && npm start",
+    "server:dev": "cd server && npm run dev",
+    "install": "cd flavor-finder/backend && npm i && cd .. && npm i",
+    "client:build": "cd flavor-finder && npm run build",
+    "client:dev": "cd flavor-finder && npm run dev",
+    "build": "cd flavor-finder && npm run build",
+    "seed": "cd flavor-finder && npm run seed",
+    "render-build": "npm install && npm run build"
   }
 }

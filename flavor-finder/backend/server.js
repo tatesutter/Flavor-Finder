@@ -11,6 +11,7 @@ app.use(express.json());
 // Routes
 app.use('/api/routes', userRoutes); // User-related routes
 app.use('/api/recipe', recipeRoutes); // Recipe-related routes
+app.use(express.static('../dist'));
 
 // Sync database and start server
 sequelize
